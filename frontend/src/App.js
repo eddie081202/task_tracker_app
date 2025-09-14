@@ -8,8 +8,8 @@ function App(){
 
   useEffect(() => {
     axios.get('/api/test')
-    .then(response =>{
-      setMessage(response.data.message)
+    .then(res =>{
+      setMessage(res.data.message)
     })
     .catch(error => {
       console.error("there was an error with fetching data", error)
